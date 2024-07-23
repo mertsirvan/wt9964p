@@ -1,0 +1,288 @@
+body {
+    font-family: "Mulish", sans-serif;
+}
+
+h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
+    font-family: "Newsreader", serif;
+    font-weight: 600;
+}
+
+.btn-primary {
+    --bs-btn-bg: #2937f0;
+}
+
+section {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+img, svg {
+    vertical-align: middle;
+}
+
+.icon-feature {
+    font-size: 4rem;
+}
+
+.text-gradient {
+    background: -webkit-linear-gradient(#2937f0, #9f1ae2);
+    background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+}
+
+#mainNav {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: #fff;
+}
+
+
+#mainNav .navbar-brand {
+    font-family: "Kanit", serif;
+}
+
+
+#mainNav .navbar-nav .nav-item .nav-link:hover {
+    color: #6c757d;
+}
+
+.font-alt {
+    font-family: "Kanit", serif;
+}
+
+#mainNav .navbar-toggler {
+    font-size: 0.875rem;
+    padding: 0.75rem 1rem;
+    color: #212529;
+}
+
+.nav-link {
+    color: #212529;
+}
+.masthead {
+    background-color: #f8f9fa;
+    padding-top: 9.5rem;
+    padding-bottom: 5rem;
+}
+
+.masthead .masthead-device-mockup {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.masthead .masthead-device-mockup .circle {
+    position: absolute;
+    fill: url(#circleGradient);
+    width: 70%;
+    display: none;
+    stroke: #c79943;
+}
+
+.features-device-mockup .shape-1,
+.masthead .masthead-device-mockup .shape-1 {
+    position: absolute;
+    height: 1rem;
+    width: 1rem;
+    transform: rotate(-10deg);
+    fill: #c79943;
+    bottom: 15%;
+    left: 10%;
+}
+
+.features-device-mockup .shape-2,
+.masthead .masthead-device-mockup .shape-2 {
+    position: absolute;
+    height: 1rem;
+    width: 1rem;
+    transform: rotate(-80deg);
+    fill: #293349;
+    top: 15%;
+    right: 10%;
+}
+
+.features-device-mockup .circle {
+    position: absolute;
+    left: 0;
+    fill: url(#circleGradient);
+    width: 70%;
+    display: none;
+    stroke: #c79943;
+}
+
+.app-badge {
+    height: 3rem;
+}
+
+section.secondary-bg {
+    border-top: solid 5px #c79943;
+    border-bottom: solid 5px #c79943;
+}
+
+.bg-gradient-primary-to-secondary {
+    background: linear-gradient(45deg, #293349, #405073) !important;
+}
+
+.features-device-mockup {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.device-wrapper {
+    max-width: 300px;
+    width: 100%;
+  }
+
+.device {
+    position: relative;
+    background-size: cover;
+}
+
+.device .screen {
+    position: absolute;
+    background-size: cover;
+    pointer-events: auto;
+}
+
+.device::after {
+    position: absolute;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.device[data-device=iPhoneX][data-orientation=portrait][data-color=black] {
+    padding-bottom: 198.898071625%;
+  }
+  
+  .device[data-device=iPhoneX][data-orientation=portrait][data-color=black] .screen {
+    top: 3.1855955679%;
+    left: 6.8870523416%;
+    width: 86.2258953168%;
+    height: 93.6288088643%;
+  }
+  
+  .device[data-device=iPhoneX][data-orientation=portrait][data-color=black]::after {
+    content: "";
+    background-image: url("../images/portrait_black.png");
+  }
+  
+  .device[data-device=iPhoneX][data-orientation=portrait][data-color=black] .button {
+    display: none;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+  }
+
+.masthead .masthead-device-mockup .circle .gradient-start-color {
+    stop-color: #293349;
+}
+
+.masthead .masthead-device-mockup .circle .gradient-end-color {
+    stop-color: #405073;
+}
+
+section.cta .cta-content {
+    position: relative;
+    z-index: 1;
+}
+
+section.cta:before {
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+section.cta {
+    position: relative;
+    padding: 15rem 0;
+    background-image: url(../images/ageofmpires_iv_hre.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+
+footer {
+    border-top: solid 5px #c79943;
+}
+
+footer a {
+    color: rgba(255, 255, 255, 0.5);
+    text-decoration: none;
+}
+
+footer a:hover, footer a:active, footer a:focus {
+    color: rgba(255, 255, 255, 0.75);
+    text-decoration: underline;
+}
+
+/*-----------------------
+-------- responsive -----
+-----------------------*/
+@media (min-width: 576px) {
+    .masthead .masthead-device-mockup .circle {
+        width: 70%;
+        display: block;
+    }
+    .features-device-mockup .circle {
+        width: 70%;
+        display: block;
+        left: auto;
+    }
+}
+
+@media (min-width: 768px) {
+    .masthead .masthead-device-mockup .circle {
+        width: 60%;
+    }
+    .features-device-mockup .circle {
+        width: 60%;
+        left: auto;
+    }
+}
+
+@media (min-width: 992px) {
+    .masthead .masthead-device-mockup .circle {
+        width: 90%;
+    }
+    .features-device-mockup .circle {
+        width: 90%;
+        left: -25%;
+    }
+    order-lg-0 {
+        order: 0 !important;
+    }
+}
+
+@media (min-width: 1200px) {
+    .masthead .masthead-device-mockup .circle {
+        width: 75%;
+    }
+    .features-device-mockup .circle {
+        width: 75%;
+        left: 0;
+    }
+}
+
+@media (min-width: 1400px) {
+    .masthead .masthead-device-mockup .circle {
+        width: 70%;
+    }
+    .features-device-mockup .circle {
+        width: 80%;
+        left: 0;
+    }
+    .features-device-mockup .device-wrapper {
+        max-width: 17rem;
+    }
+}
